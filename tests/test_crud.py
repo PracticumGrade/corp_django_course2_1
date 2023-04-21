@@ -4,7 +4,7 @@ from tests.conftest import check_count_columns, check_non_empty_actual_result
 def test_get_published_posts_count(cur):
     function_name = 'get_published_posts_count'
     try:
-        from crud import get_published_posts_count
+        from blogicum.crud import get_published_posts_count
     except Exception as e:
         raise AssertionError(
             f'При импорте функции `{function_name}` из файла `blogicum/crud.py` '
@@ -32,7 +32,7 @@ def test_get_published_posts_count(cur):
 def test_get_top_5_posts(cur):
     function_name = 'get_top_5_posts'
     try:
-        from crud import get_top_5_posts
+        from blogicum.crud import get_top_5_posts
     except Exception as e:
         raise AssertionError(
             f'При импорте функции `{function_name}` из файла `blogicum/crud.py` '
@@ -65,7 +65,7 @@ def test_get_top_5_posts(cur):
 def test_get_unique_authors(cur):
     function_name = 'get_unique_authors'
     try:
-        from crud import get_unique_authors
+        from blogicum.crud import get_unique_authors
     except Exception as e:
         raise AssertionError(
             f'При импорте функции `{function_name}` из файла `blogicum/crud.py` '
@@ -96,7 +96,7 @@ def test_get_unique_authors(cur):
 def test_get_category_avg_rating(cur):
     function_name = 'get_category_avg_rating'
     try:
-        from crud import get_category_avg_rating
+        from blogicum.crud import get_category_avg_rating
     except Exception as e:
         raise AssertionError(
             f'При импорте функции `{function_name}` из файла `blogicum/crud.py` '
@@ -126,7 +126,7 @@ def test_get_category_avg_rating(cur):
 def test_get_users_posts(cur):
     function_name = 'get_users_posts'
     try:
-        from crud import get_users_posts
+        from blogicum.crud import get_users_posts
     except Exception as e:
         raise AssertionError(
             f'При импорте функции `{function_name}` из файла `blogicum/crud.py` '

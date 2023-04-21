@@ -24,7 +24,7 @@ def test_exists_database_file(database_file):
 )
 def test_data_for_insert_in_table(variable_name, expected_result):
     try:
-        import models
+        from blogicum import models
         solution_list_values = getattr(models, variable_name)
     except Exception as e:
         raise AssertionError(
